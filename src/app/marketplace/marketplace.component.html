@@ -1,0 +1,7 @@
+<h1>Look, all of the people who need the money. Here are their dreams.</h1>
+
+<div *ngFor="let idea of ideas" (click)="goToDetailPage(idea)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{idea.name}}</em> by {{idea.projectManager}}</h3>
+  </div>
+</div>
